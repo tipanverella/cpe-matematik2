@@ -1,0 +1,20 @@
+[book]
+title = "Matematik Segonn"
+authors = ["Tipan Verella (MacBook Pro)"]
+language = "ht"
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+mathjax-support = true
+additional-js = [
+  "mermaid.min.js",
+  "mermaid-init.js",
+  "mathjax-config.js",
+  "node_modules/mathjax/tex-mml-svg.js",
+]
+
+[output.pandoc.profile.pdf]
+output-file = "output.pdf"
+to = "latex"
